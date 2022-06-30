@@ -1,0 +1,17 @@
+name: "pre-commit-hooks"
+description: "prepares everything need for terraform to run"
+
+inputs:
+  bucket_name:
+    description: 'Terraform state bucket name'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+
+    - name: tf-init
+      shell: bash
+      run: terraform init -backend-config=${{ inputs.bucket_name }}
