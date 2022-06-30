@@ -1,1 +1,1 @@
-## Click-Ins GitHub Composite Actions
+# Click-Ins GitHub Composite Actions
