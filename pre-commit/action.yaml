@@ -21,4 +21,6 @@ runs:
           wget https://github.com/aquasecurity/tfsec/releases/download/v1.26.0/tfsec-checkgen-linux-amd64
           sudo mv tfsec-checkgen-linux-amd64 /usr/local/terraform_tfsec.sh
 
-    - uses: pre-commit/action@v3.0.0
+    - name: "run-pre-commit"
+      shell: bash
+      run: pre-commit run -a
