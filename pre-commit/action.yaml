@@ -20,6 +20,7 @@ runs:
 
           wget https://github.com/aquasecurity/tfsec/releases/download/v1.26.0/tfsec-linux-amd64
           sudo mv tfsec-linux-amd64 /usr/bin/tfsec
+          sudo chmod +x /usr/bin/tfsec
 
           echo "Runnig pre-commit Hooks"
           pre-commit run -a
