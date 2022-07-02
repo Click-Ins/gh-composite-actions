@@ -16,10 +16,10 @@ runs:
           curl -Lo ./terraform-docs.tar.gz https://github.com/terraform-docs/terraform-docs/releases/download/v0.16.0/terraform-docs-v0.16.0-$(uname)-amd64.tar.gz
           tar -xzf terraform-docs.tar.gz
           chmod +x terraform-docs
-          mv terraform-docs /usr/bin/terraform-docs
+          sudo v terraform-docs /usr/bin/terraform-docs
 
           wget https://github.com/aquasecurity/tfsec/releases/download/v1.26.0/tfsec-linux-amd64
-          mv tfsec-linux-amd64 /usr/bin/tfsec
+          sudo mv tfsec-linux-amd64 /usr/bin/tfsec
 
           echo "Runnig pre-commit Hooks"
           pre-commit run -a
