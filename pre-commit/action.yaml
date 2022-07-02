@@ -18,8 +18,8 @@ runs:
           chmod +x terraform-docs
           mv terraform-docs /usr/bin/terraform-docs
 
-          wget https://github.com/aquasecurity/tfsec/releases/download/v1.26.0/tfsec-checkgen-linux-amd64
-          mv tfsec-checkgen-linux-amd64 /usr/bin/tfsec
+          wget https://github.com/aquasecurity/tfsec/releases/download/v1.26.0/tfsec-linux-amd64
+          mv tfsec-linux-amd64 /usr/bin/tfsec
 
           echo "Runnig pre-commit Hooks"
           pre-commit run -a
