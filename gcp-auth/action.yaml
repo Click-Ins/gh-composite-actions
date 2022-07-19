@@ -9,7 +9,7 @@ inputs:
   access_token_lifetime:
     description: 'GCP access_token lifetime in seconds'
     required: true
-    default: 300s
+    default: 3600s
   create_credentials_file:
     description: 'Indicates whether to create credentials_file'
     required: true
